@@ -1,0 +1,263 @@
+/** CSS file of Alex Calvin GBETIE from MEST (meltwater.org) for our HTML+CSS assignment **/
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #212121;
+    background-color: #f7f4f4;
+    font-weight: 300
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 5px;
+    color: #373432;
+    line-height: 1em;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Pacifico', cursive;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 2em;
+}
+
+#mest-header {
+    padding-top: 60px;
+    display: block;
+    position: fixed;
+    left: -260px;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background: #0a0a0a;
+    z-index: 998;
+    opacity: 0.5;
+    -webkit-transition: all .5s ease-in;
+	transition: all .5s ease-in;
+}
+
+.mest-alex-logo {
+    border-bottom: 1px #fff;
+    border-top: 1px #fff;
+    z-index: 1000;
+}
+
+.mest-alex-logo a#mest-logo > h1 {
+    font-size: 45px !important;
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+
+.mest-menu {
+    padding-top: 40px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #fff
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 25px;
+    font-weight: 1.5em;
+    padding-top: 15px;
+}
+
+#mest-header a.open-header {
+	padding: 15px 30px;
+	background: #555;
+	color: #fff;
+	text-decoration: none;
+    position: absolute;
+	right: -115px;
+	top: 150px;
+
+	-ms-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+
+	border-radius: 0 0 8px 8px;
+}
+
+#mest-header a.close-header {
+	padding: 15px 30px;
+	background: #555;
+	color: #fff;
+	text-decoration: none;
+    position: absolute;
+	right: -95px;
+	top: 150px;
+
+	-ms-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+
+	border-radius: 0 0 8px 8px;
+}
+
+#mest-header a.close-header {
+	display: none;
+}
+
+#mest-header:target {
+	left: 0;
+}
+
+#mest-header-close:target #mest-header {
+	left: -270px;
+}
+
+#mest-header-close:target #mest-header {
+	/* Go back */
+}
+
+#mest-header:target a.open-header {
+	display: none;
+}
+#mest-header:target a.close-header {
+	display: block;
+}
+
+.parallax {
+    background-attachment: fixed !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.overlay {
+    background: #000000;
+    opacity: 0.8;
+    height: 100%;
+}
+
+.parallax .container {
+    padding: 35px 0;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#mest-home {
+    background-image: url(../img/abidjan-night.jpg);
+    background-position: 50% 0px;
+    margin: -5px;
+}
+
+.alex-picture {
+    background-image: url(../img/alex14.jpg);
+    background-size: cover;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    position: relative;
+    cursor: default;
+    box-shadow: inset 0 0 0 0 rgba(200,95,66, 0.4), inset 0 0 0 16px rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+
+.alex-do {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.alex-do > h1 {
+    font-size: 60px;
+    color: #FFFFFF;
+    font-family: Pacifico;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.alex-do > h2 {
+    font-size: 40px;
+    color: #FFFFFF;
+    font-family: Advent Pro;
+    line-height: 1.5em;
+}
+
+#name-font {
+    font-family: 'Raleway';
+}
+
+.mest-title {
+    height: 400px;
+    width: 100%;
+    background-image: url(../img/alex15.jpg);
+    background-size: cover;
+}
+
+.page-title {
+    margin-top: 130px;
+}
+
+.page-title > h1 {
+    font-size: 75px;
+    color: #FFFFFF;
+    font-family: Pacifico;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.head-title {
+    margin: 40px 100px 50px 300px;
+    padding-left: 50px;
+    border-left: 2px #555 dotted;
+}
+
+.head-title > h2 {
+    font-size: 40px;
+    font-family: Advent Pro;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+.me-title {
+    height: 400px;
+    width: 100%;
+    background-image: url(../img/alex16.jpg);
+    background-size: cover;
+}
+
+.about-me {
+    margin: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+blockquote {
+    font-size: 26px;
+    color: #555;
+    font-family: Pacifico;
+}
+
+.alex-gallery {
+    padding-left: 80px;
+    padding-bottom: 30px;
+}
+
+.alex-gallery img {
+    height: 30%;
+    width: 30%;
+}
